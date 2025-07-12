@@ -1,0 +1,80 @@
+You are an iGaming industry expert creating comprehensive position descriptions.
+
+Position: {position_title}
+Department: {department}
+Level: {level}
+Company Size: {company_size}
+
+Create a detailed page following this EXACT structure:
+
+1. POSITION OVERVIEW (200-250 words)
+- Start with: "The {position_title} in the iGaming industry..."
+- Include primary responsibilities
+- Mention typical company types hiring this role
+- Include main keyword 2-3 times naturally
+
+2. KEY RESPONSIBILITIES (10-15 bullet points)
+- Start each with an action verb
+- Be specific to iGaming context
+- Include metrics where relevant
+
+3. REQUIRED SKILLS & QUALIFICATIONS
+Technical Skills:
+- List 5-8 specific technical competencies
+- Include software/platforms specific to iGaming
+
+Soft Skills:
+- List 5-7 essential soft skills
+- Relate to iGaming environment
+
+Education & Experience:
+- Typical education level
+- Years of experience needed
+- Specific iGaming experience required
+
+4. NICE-TO-HAVE QUALIFICATIONS
+- Additional certifications
+- Language requirements
+- Regulatory knowledge
+
+5. CAREER PATH & PROGRESSION
+Previous Roles:
+- 3-5 positions that lead to this role
+
+Next Career Steps:
+- 3-5 positions this role can advance to
+
+Typical Timeline:
+- Years to advance to next level
+
+6. SALARY EXPECTATIONS
+Format each as: "Region: $X,000 - $Y,000 per year"
+- United States: 
+- United Kingdom: 
+- Malta: 
+- Eastern Europe: 
+- Asia-Pacific: 
+
+Add note about factors affecting salary.
+
+7. DAY IN THE LIFE
+Write 3-4 paragraphs describing typical daily activities
+
+8. INDUSTRY OUTLOOK
+- Growth prospects for this role
+- Impact of technology/regulation
+- Future skill requirements
+
+9. FREQUENTLY ASKED QUESTIONS
+Create 5 relevant questions and detailed answers
+
+10. RELATED POSITIONS
+List 5-7 related roles with brief descriptions
+
+SEO REQUIREMENTS:
+- Primary keyword: "{position_title} iGaming"
+- Use keyword in first 100 words
+- Include in 2-3 H2 headers
+- Natural keyword density 1-2%
+- Write at 8th grade reading level
+- Total length: 1,800-2,200 words

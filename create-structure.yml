@@ -1,0 +1,75 @@
+name: Create Project Structure
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Create Directory Structure
+        run: |
+          mkdir -p data/structured-data
+          mkdir -p data/seo-data
+          mkdir -p wordpress-implementation/phase-1-foundation
+          mkdir -p wordpress-implementation/phase-2-structure
+          mkdir -p wordpress-implementation/phase-3-import
+          mkdir -p wordpress-implementation/phase-4-design
+          mkdir -p interactive-tools/organization-explorer/org-chart-widget
+          mkdir -p interactive-tools/organization-explorer/department-visualizer
+          mkdir -p interactive-tools/organization-explorer/position-search
+          mkdir -p interactive-tools/career-navigator/career-paths-visualizer
+          mkdir -p interactive-tools/career-navigator/skills-matrix-interactive
+          mkdir -p interactive-tools/career-navigator/salary-calculator
+          mkdir -p interactive-tools/career-navigator/career-progression-timeline
+          mkdir -p interactive-tools/business-builder/business-model-configurator
+          mkdir -p interactive-tools/business-builder/team-size-calculator
+          mkdir -p interactive-tools/business-builder/timeline-generator
+          mkdir -p interactive-tools/business-builder/roi-calculator
+          mkdir -p interactive-tools/business-builder/pdf-report-generator
+          mkdir -p interactive-tools/industry-insights/company-comparison-tool
+          mkdir -p interactive-tools/industry-insights/market-trends-dashboard
+          mkdir -p interactive-tools/industry-insights/regulatory-requirements-map
+          mkdir -p ai-content-generation/chatgpt-prompts
+          mkdir -p ai-content-generation/jetpack-ai-templates
+          mkdir -p ai-content-generation/bulk-generation-scripts
+          mkdir -p seo-optimization/rankmath-configs/schema-templates
+          mkdir -p seo-optimization/content-strategy
+          mkdir -p seo-optimization/technical-seo
+          mkdir -p n8n-automation/workflows
+          mkdir -p n8n-automation/api-integrations
+          mkdir -p n8n-automation/automation-calendar
+          mkdir -p monetization/freemium-setup
+          mkdir -p monetization/b2b-api
+          mkdir -p monetization/recruitment-services
+          mkdir -p documentation
+          mkdir -p launch-materials/marketing
+          mkdir -p launch-materials/analytics
+      
+      - name: Create README files
+        run: |
+          echo "# iGaming Organization Hub" > README.md
+          echo "## Data Directory" > data/README.md
+          echo "## WordPress Implementation" > wordpress-implementation/README.md
+          echo "## Interactive Tools" > interactive-tools/README.md
+          echo "## AI Content Generation" > ai-content-generation/README.md
+          echo "## SEO Optimization" > seo-optimization/README.md
+          echo "## n8n Automation" > n8n-automation/README.md
+          echo "## Monetization" > monetization/README.md
+          echo "## Documentation" > documentation/README.md
+          echo "## Launch Materials" > launch-materials/README.md
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Create initial project structure"
+          git push
